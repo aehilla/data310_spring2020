@@ -1,1 +1,5 @@
-# data310_spring2021
+# Data 310
+
+## informal exercises
+
+## projects
