@@ -1,7 +1,8 @@
 # Data 310
 
-## informal exercises
+## homework
+- [homework 1: zillow]
 
 ## projects
  - Project 1 
-[practice link to google](https://www.google.com)
+[practice link](https://www.google.com)
