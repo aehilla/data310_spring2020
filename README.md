@@ -6,4 +6,4 @@
 
 ## projects
  - Project 1 
-[practice link](https://www.google.com)
+
