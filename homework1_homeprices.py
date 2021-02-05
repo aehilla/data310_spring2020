@@ -29,7 +29,10 @@ print(model.predict([4.0]))
 # output is approx. 299
 print(model.predict([3.0]))
 # output is approx. 235
-
+print(model.predict([2.0]))
+# output is approx. 169
+print(model.predict([5.0]))
+# output is approx. 365
 
 ### re-run model using number of bathrooms:
 
