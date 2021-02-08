@@ -3,7 +3,7 @@
 ## Intro
 Hi, I'm Amy. I'm from Arlington, VA and I'm majoring in Economics and minoring in Data Science.
 
-![Photo](https://github.com/aehilla/data310_spring2021/blob/main/image%20(2).jpg?=50x)
+![Photo](https://github.com/aehilla/data310_spring2021/blob/main/image%20(2).jpg? =50x)
 
 <img src="https://github.com/aehilla/data310_spring2021/blob/main/image%20(2).jpg" width="200" height="200" />
 
