@@ -3,7 +3,9 @@
 ## Intro
 Hi, I'm Amy. I'm from Arlington, VA and I'm majoring in Economics and minoring in Data Science.
 
-![Photo](https://github.com/aehilla/data310_spring2021/blob/main/image%20(2).jpg=100x)
+![Photo](https://github.com/aehilla/data310_spring2021/blob/main/image%20(2).jpg?raw=true=100x)
+
+<img src="https://github.com/aehilla/data310_spring2021/blob/main/image%20(2).jpg" width="200" height="200" />
 
 ## Homework
 - [homework 1: home prices script](https://github.com/aehilla/data310_spring2021/blob/main/feb3_homework_script.py)
