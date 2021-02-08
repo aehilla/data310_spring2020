@@ -28,17 +28,19 @@ What is the shape of the images training set (how many and the dimension of each
 Use np.argmax() with your predictions object to return the numeral with the highest probability from the test labels dataset.
 - I randomly chose the image at index 97
 
-```classifications = model.predict(test_images)```
+```
+classifications = model.predict(test_images)
 
-```print(classifications[97])```
+print(classifications[97])
 
-\[6.1059264e-14 2.8641389e-06 8.3220975e-06 7.9902960e-04 1.3495819e-08
- 5.7034008e-14 1.5956934e-33 9.9918967e-01 6.7410788e-08 1.1945669e-08]
+>>> [6.1059264e-14 2.8641389e-06 8.3220975e-06 7.9902960e-04 1.3495819e-08 5.7034008e-14 1.5956934e-33 9.9918967e-01 6.7410788e-08 1.1945669e-08]
  
-```np.argmax(classifications[97])```
+np.argmax(classifications[97])
 
-7
+>>> 7
+```
 
 8. Produce a plot of your selected image and the accompanying histogram that illustrates the probability of that image being the selected number
 
-![](https://github.com/aehilla/data310_spring2021/blob/main/Figure_1_hw_feb5.png) 
+<img src="https://github.com/aehilla/data310_spring2021/blob/main/Figure_1_hw_feb5.png" width="175" height="200" />
+
