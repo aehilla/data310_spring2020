@@ -1,6 +1,6 @@
 # [Data 310](https://aehilla.github.io/data310_spring2021/)
 
-## Intro
+### Intro
 Hi, I'm Amy. I'm from Arlington, VA and I'm majoring in Economics and minoring in Data Science.
 
 <img src="./image%20(2).jpg" width="175" height="200" />
