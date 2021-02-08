@@ -13,7 +13,7 @@ This 3-variable model predicts prices (in 100k) of:
 |Moon| 2.500  | 1.578        | Bad deal|
 |New Pt. Comfort| 2.290   | 2.667        |Good deal|
 
-To get these predictions, the model takes three input arrays:
+To get these predictions, the model takes the following input arrays:
 
 ```
   # number of bedrooms: 
