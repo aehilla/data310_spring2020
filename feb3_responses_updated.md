@@ -16,7 +16,7 @@ This 3-variable model predicts prices (in 100k) of:
 To get these predictions, the model takes three input arrays:
 
 <code>
-  # number of bedrooms: /n
+  # number of bedrooms: <br/>
   x1 = np.array([4.0, 3.0, 5.0, 4.0, 2.0, 3.0], dtype = float)
   # square footage:
   x2 = np.array([3.680, 1.238, 3.051, 3.524, 1.479, 2.840], dtype = float)
