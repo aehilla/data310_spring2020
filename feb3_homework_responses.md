@@ -1,4 +1,4 @@
-## homework 1 responses, 2/5/21
+## homework 1 responses, for class on 2/5/21
 
 1. In the Maroney video What is ML, he argues that the main difference between traditional programming and machine learning is that in 
 traditional programming, you have rules and data that go in, and answers that come out. In ML, programmers instead feed in answers and data to the computer, which then figures out what the rules or patterns are, and gives them as an output.
