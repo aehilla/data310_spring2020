@@ -15,8 +15,8 @@ This 3-variable model predicts prices (in 100k) of:
 
 To get these predictions, the model takes three input arrays:
 
-<code>
-  # number of bedrooms: <br/>
+```
+  # number of bedrooms: 
   x1 = np.array([4.0, 3.0, 5.0, 4.0, 2.0, 3.0], dtype = float)
   # square footage:
   x2 = np.array([3.680, 1.238, 3.051, 3.524, 1.479, 2.840], dtype = float)
@@ -26,3 +26,4 @@ To get these predictions, the model takes three input arrays:
   xs = np.stack([x1, x2, x3], axis = 1)
   # price:
   ys = np.array([3.990, .970, 3.475, 2.890, 2.500, 2.290], dtype = float)
+```
