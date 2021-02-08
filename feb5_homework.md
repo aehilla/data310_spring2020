@@ -41,3 +41,4 @@ Use np.argmax() with your predictions object to return the numeral with the high
 
 8. Produce a plot of your selected image and the accompanying histogram that illustrates the probability of that image being the selected number
 
+![](https://github.com/aehilla/data310_spring2021/blob/main/Figure_1_hw_feb5.png) 
