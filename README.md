@@ -1,5 +1,9 @@
 # Data 310
 
+## intro
+Hi, I'm Amy. I'm from Arlington, VA and I'm majoring in Economics and minoring in Data Science.
+![Photo](image (2).jpg?raw=true "Title")
+
 ## homework
 - [homework 1: home prices script](https://github.com/aehilla/data310_spring2021/blob/main/feb3_homework_script.py)
 - [homework 1: informal responses](https://aehilla.github.io/data310_spring2021/feb3_homework_responses.html)
