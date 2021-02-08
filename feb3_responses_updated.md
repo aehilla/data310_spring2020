@@ -1,4 +1,5 @@
-## Updated response using home prices model with three variables
+## Feb 3 Homework:
+### Updated response using home prices model with three variables
 
 The updated script I made to predict housing price predicts based on square footage, number of bedrooms, and number of bathrooms. 
 
