@@ -1,4 +1,5 @@
 ### For class on 2/8/21
+#### (updated 2/10/21)
 
 1. In the video, First steps in computer vision, Laurence Maroney introduces us to the Fashion MNIST data set and using it to train a neural network in order to teach a computer “how to see.” One of the first steps towards this goal is splitting the data into two groups, a set of training images and training labels and then also a set of test images and test labels. Why is this done? What is the purpose of splitting the data into a training set and a test set?
 - The images are split into two sets because the neural net is trained on a subset of the images, and then the rest of the images are used to test the network on how well it guesses the categories of images it has never seen before. The purpose is to give us an estimation of how well our model performs. 
