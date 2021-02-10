@@ -44,5 +44,4 @@ np.argmax(classifications[97])
 8. Produce a plot of your selected image and the accompanying histogram that illustrates the probability of that image being the selected number
 
 <img src="./Figure_1_hw_feb5.png" width="200" height="200" />
-
 <img src="./feb5hw_hist.png" width="200" height="200" />
