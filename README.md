@@ -2,6 +2,7 @@
 
 ### Intro
 <img src="./image%20(2).jpg" width="131" height="150" />
+
 Hi, I'm Amy. I'm from Arlington, VA and I'm majoring in Economics and minoring in Data Science.
 
 
