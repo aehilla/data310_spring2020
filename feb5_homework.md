@@ -44,3 +44,4 @@ np.argmax(classifications[97])
 
 <img src="https://github.com/aehilla/data310_spring2021/blob/main/Figure_1_hw_feb5.png" width="175" height="200" />
 
+<img src="https://github.com/aehilla/data310_spring2021/blob/main/fig2_hist.png" width="175" height="200" />
