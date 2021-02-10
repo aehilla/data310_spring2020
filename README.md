@@ -3,7 +3,9 @@
 ### Intro
 <img src="./image%20(2).jpg" width="131" height="150" />
 
-Hi, I'm Amy. I'm from Arlington, VA and I'm majoring in Economics and minoring in Data Science.
+Hi, I'm Amy. I'm from Arlington, VA. I'm a senior at W&M, majoring in Economics and minoring in Data Science. 
+
+This repository was created for the Spring 2021 semester of Applied Machine Learning (DATA 310, section 2). 
 
 
 
