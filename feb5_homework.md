@@ -45,4 +45,4 @@ np.argmax(classifications[97])
 
 <img src="./Figure_1_hw_feb5.png" width="200" height="200" />
 
-<img src="./fig2_hist.png" width="200" height="200" />
+<img src="./feb5hw_hist.png" width="200" height="200" />
