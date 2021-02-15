@@ -20,7 +20,7 @@ He explained it as a workflow with the following steps:
 1. original model is trained on the rich dataset 
 2. semantic segmentation 
 3. pixel embedding 
-4. linear model. 
+4. linear model
 
 The transfer step is to throw away 
 the previous linear model, freeze the weights of the main network, and then retrain a new 
