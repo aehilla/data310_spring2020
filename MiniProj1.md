@@ -1,7 +1,8 @@
 # Responses for Mini Project 1: Social Distance Detector
 ### Feb 14
 
-[input video of people walking](https://www.videvo.net/video/people-walking-on-street/2181/)
+[input: video of people walking](https://www.videvo.net/video/people-walking-on-street/2181/)
+
 [output from social distance detector (compressed)](output_of_walking_compressed.mp4)
 
 1. Was your social distance detector effective at detecting potential violations? 
