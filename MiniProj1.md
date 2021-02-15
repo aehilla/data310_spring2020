@@ -3,7 +3,7 @@
 
 [input: video of people walking](https://www.videvo.net/video/people-walking-on-street/2181/)
 
-[output from social distance detector (compressed)](output_of_walking_compressed.mp4)
+[output from social distance detector (compressed mp4 file)](output_of_walking_compressed.mp4)
 
 1. Was your social distance detector effective at detecting potential violations? 
 
