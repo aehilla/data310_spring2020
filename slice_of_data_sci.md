@@ -15,8 +15,14 @@ lower resolution labeled imagery from the rest of the country. They successfully
 
 The process that Caleb's team used of training on the Chesapeake Bay land cover map 
 and then training on the low res imagery to classify the high res input is called "transfer learning." 
-He explained it as a workflow with the following steps: 1. original model is trained on the rich dataset 
-2. semantic segmentation 3. pixel embedding 4. linear model. The transfer step is to throw away 
+He explained it as a workflow with the following steps: 
+
+1. original model is trained on the rich dataset 
+2. semantic segmentation 
+3. pixel embedding 
+4. linear model. 
+
+The transfer step is to throw away 
 the previous linear model, freeze the weights of the main network, and then retrain a new 
 linear model for the new task (in this case, classifying land cover for the high res imagery). 
 
