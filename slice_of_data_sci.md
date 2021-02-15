@@ -29,9 +29,9 @@ linear model for the new task (in this case, classifying land cover for the high
 I was really interested in his explanation of transfer learning. In my opinion, this seems like 
 a strategy that could have a lot of applications beyond land cover mapping. Being able to classify 
 datasets based on more narrow labeled data sets plus broader unlabeled datasets would be 
-useful in any case highly granular, widespread data is newly available and needs to be classified. 
+useful in any case where highly granular, widespread data is newly available and needs to be classified. 
 For example, I think this could be useful in applications such as mapping wildfires. Increasingly 
 common wildfires in places like Australia and California have meant that more attention is being given 
-to the issue and more and more high resolution imagery of the fires is being produced. Using the transfer 
+to the issue and higher resolution imagery of the fires is being produced. Using the transfer 
 learning process to help categorize what parts of the land area are burning at a higher resolution 
 could be extremely important during future fire seasons. 
