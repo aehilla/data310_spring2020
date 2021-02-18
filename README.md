@@ -12,6 +12,7 @@ This repository was created for the Spring 2021 semester of Applied Machine Lear
 - [Feb 5: informal responses (updated)](https://aehilla.github.io/data310_spring2021/feb5_homework.html)
 - [Feb 8: informal responses (fashion mnist plots)](https://aehilla.github.io/data310_spring2021/feb8_homework.html)
 - [Feb 11: Extra Credit - Slice of Data Science Reflection](https://aehilla.github.io/data310_spring2021/slice_of_data_sci.html)
+- [Feb 17: informal responses](https://aehilla.github.io/data310_spring2021/feb17_homework.html)
 
 ### Projects
  - [Mini Project 1 - Feb 14](https://aehilla.github.io/data310_spring2021/MiniProj1.html)
