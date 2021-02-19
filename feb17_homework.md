@@ -103,4 +103,4 @@ Did the resulting image increase in size or decrease? Why would this method be u
 
 Again, instead of using misc.ascent(), apply the pooling filter to one of your transformed images.
 
-* see image above
+<img src="./feb17hwpooled1.png" width="300" height="250" />
