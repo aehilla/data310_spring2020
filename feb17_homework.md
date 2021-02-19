@@ -15,8 +15,7 @@ filter1 = [ [-2, -2, -2], [0, 0, 0], [2, 2, 2]]
 <img src="./feb17hwfilter1.png" width="300" height="250" />
 
 * Filter two
-
-- This filter behaved similarly to filter one. It has the same numbers as filter one, but I swapped the signs of the first array and the last array, to see if making the numbers positive/negative affected the output of the filter. The plots of the two images for filter 1 and 2 are almost identical, although filter 1 seems to have emphasized the vertical and diagonal lines even more than filter 2. 
+    * This filter behaved similarly to filter one. It has the same numbers as filter one, but I swapped the signs of the first array and the last array, to see if making the numbers positive/negative affected the output of the filter. The plots of the two images for filter 1 and 2 are almost identical, although filter 1 seems to have emphasized the vertical and diagonal lines even more than filter 2. 
 
 ```
 filter2 = [ [2, 2, 2], [0, 0, 0], [-2, -2, -2]]
@@ -25,8 +24,7 @@ filter2 = [ [2, 2, 2], [0, 0, 0], [-2, -2, -2]]
 <img src="./feb17hwfilter2.png" width="300" height="250" />
 
 * Filter three
-
-- For this filter, I wanted to see what would happen if I left the middle value in each array as zero. This filter did not emphasize the vertical or diagonal lines as much as filter 1 and 2 did, but it also didn't particularly emphasize the horizontal lines either. In general, the output of the image using the filter was much darker than the other filters. 
+    * For this filter, I wanted to see what would happen if I left the middle value in each array as zero. This filter did not emphasize the vertical or diagonal lines as much as filter 1 and 2 did, but it also didn't particularly emphasize the horizontal lines either. In general, the output of the image using the filter was much darker than the other filters. 
 
 ```
 filter3 = [ [2, 0, 2], [1, 0, -1], [-2, 0, -2]]
