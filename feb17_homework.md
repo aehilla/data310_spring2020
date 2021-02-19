@@ -44,9 +44,38 @@ Why is the application of a convolving filter to an image useful for computer vi
 
 Instead of using the misc.ascent() image from scipy, can you apply three filters and weights to your own selected image? Again describe the results.
 
-* plot one
-* plot two
-* plot three
+* input image:
+
+<img src="./image%20(2).jpg" width="300" height="250" />
+
+* first I had to reduce the quality and convert the image to greyscale:
+
+<img src="./feb17hwgrayscalepic.png" width="300" height="250" />
+
+* filter 4:
+
+```
+filter4 = [ [0, 1, 0], [1, 1, 1], [0, 1, 0]]
+```
+
+<img src="./feb17hwfilter4.png" width="300" height="250" />
+
+* filter 5:
+
+```
+filter5 = [ [-1, 0, 1], [-2, 0, 2], [-1, 0, 1]]
+```
+
+<img src="./feb17hwfilter5.png" width="300" height="250" />
+
+* filter 6
+
+```
+filter6 = [ [0, 1, 0], [0, -2, 0], [0, 1, 0]]
+```
+
+<img src="./feb17hwfilter6.png" width="300" height="250" />
+
 
 Another useful method is pooling. Apply a 2x2 filter to one of your convolved images, and plot the result. 
 
