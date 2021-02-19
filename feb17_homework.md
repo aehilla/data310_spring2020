@@ -12,6 +12,7 @@ Plot each result, upload them to your response, and describe how each filter tra
 filter1 = [ [-2, -2, -2], [0, 0, 0], [2, 2, 2]] 
 ```
 
+<img src="./feb17hwfilter1.png" width="131" height="150" />
 !(filter_1_plot)[feb17hwfilter1.png]
 
 
