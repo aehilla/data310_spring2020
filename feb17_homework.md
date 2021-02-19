@@ -46,7 +46,7 @@ Instead of using the misc.ascent() image from scipy, can you apply three filters
 
 * input image:
 
-<img src="./image%20(2).jpg" width="300" height="250" />
+<img src="./image%20(2).jpg" width="250" height="279" />
 
 * first I had to reduce the quality and convert the image to greyscale:
 
