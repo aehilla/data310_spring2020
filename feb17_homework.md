@@ -6,7 +6,8 @@ Modify the existing filter and if needed the associated weight in order to apply
 Plot each result, upload them to your response, and describe how each filter transformed the existing image as it convolved through the original array and reduced the object size.
 
 * Filter one
-** This filter seemed like it really emphasized vertical lines, much like the filter in the moroney video, but this one also really emphasized the diagonal lines, along the fence in the left side of the image. The horizontal lines of the fence at the top of the image are very under-emphasized, to the point that they have almost disappeared. 
+
+- This filter seemed like it really emphasized vertical lines, much like the filter in the moroney video, but this one also really emphasized the diagonal lines, along the fence in the left side of the image. The horizontal lines of the fence at the top of the image are very under-emphasized, to the point that they have almost disappeared. 
 
 ``` 
 filter1 = [ [-2, -2, -2], [0, 0, 0], [2, 2, 2]] 
@@ -15,7 +16,8 @@ filter1 = [ [-2, -2, -2], [0, 0, 0], [2, 2, 2]]
 <img src="./feb17hwfilter1.png" width="300" height="250" />
 
 * Filter two
-** This filter behaved similarly to filter one. It has the same numbers as filter one, but I swapped the signs of the first array and the last array, to see if making the numbers positive/negative affected the output of the filter. The plots of the two images for filter 1 and 2 are almost identical, although filter 1 seems to have emphasized the vertical and diagonal lines even more than filter 2. 
+
+- This filter behaved similarly to filter one. It has the same numbers as filter one, but I swapped the signs of the first array and the last array, to see if making the numbers positive/negative affected the output of the filter. The plots of the two images for filter 1 and 2 are almost identical, although filter 1 seems to have emphasized the vertical and diagonal lines even more than filter 2. 
 
 ```
 filter2 = [ [2, 2, 2], [0, 0, 0], [-2, -2, -2]]
@@ -24,7 +26,8 @@ filter2 = [ [2, 2, 2], [0, 0, 0], [-2, -2, -2]]
 <img src="./feb17hwfilter2.png" width="300" height="250" />
 
 * Filter three
-** For this filter, I wanted to see what would happen if I left the middle value in each array as zero. This filter did not emphasize the vertical or diagonal lines as much as filter 1 and 2 did, but it also didn't particularly emphasize the horizontal lines either. In general, the output of the image using the filter was much darker than the other filters. 
+
+- For this filter, I wanted to see what would happen if I left the middle value in each array as zero. This filter did not emphasize the vertical or diagonal lines as much as filter 1 and 2 did, but it also didn't particularly emphasize the horizontal lines either. In general, the output of the image using the filter was much darker than the other filters. 
 
 ```
 filter3 = [ [2, 0, 2], [1, 0, -1], [-2, 0, -2]]
@@ -46,7 +49,7 @@ Instead of using the misc.ascent() image from scipy, can you apply three filters
 
 * input image:
 
-<img src="./image%20(2).jpg" width="250" height="279" />
+<img src="./image%20(2).jpg" width="200" height="223" />
 
 * first I had to reduce the quality and convert the image to greyscale:
 
