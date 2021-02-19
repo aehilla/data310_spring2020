@@ -52,7 +52,8 @@ Instead of using the misc.ascent() image from scipy, can you apply three filters
 
 <img src="./feb17hwgrayscalepic.png" width="300" height="250" />
 
-* filter 4:
+* Filter 4:
+    * I applied this filter to see what would happen if I didn't weight the filter so that all the values added up to one. I know that's what you're supposed to do but I wanted to know what the output would look like if the values added up to more than one. The output is extremely whitewashed, I think because the pixels that the filter passed over all got the pixel values increased, across the board, without any weighting to normalize the values back closer to zero.  
 
 ```
 filter4 = [ [0, 1, 0], [1, 1, 1], [0, 1, 0]]
@@ -60,7 +61,9 @@ filter4 = [ [0, 1, 0], [1, 1, 1], [0, 1, 0]]
 
 <img src="./feb17hwfilter4.png" width="300" height="250" />
 
-* filter 5:
+* Filter 5:
+    * I applied this filter to see if it would emphasize vertical lines at all. It didn't really do what I expected it to. The output image 
+is pretty dark, and the filter seems to have emphasized some of the leaves in the background of the picture, as well as my eyes and forehead. The output image in general just looks like something out of a horror movie. 
 
 ```
 filter5 = [ [-1, 0, 1], [-2, 0, 2], [-1, 0, 1]]
@@ -68,7 +71,8 @@ filter5 = [ [-1, 0, 1], [-2, 0, 2], [-1, 0, 1]]
 
 <img src="./feb17hwfilter5.png" width="300" height="250" />
 
-* filter 6
+* Filter 6:
+    * I applied this filter again to see if it would emphasize vertical lines, because only the middle values in each array are non-zero. This filter also didn't really do what I expected, and the output image is very dark. It seems like almost all the pixels have been zeroed out, except a very thin outline of the left side of my face. It seems like, generally speaking, when the filters contain mostly zeroes, the output image will be pretty dark, and when the filter contains higher values, the output image is brighter. 
 
 ```
 filter6 = [ [0, 1, 0], [0, -2, 0], [0, 1, 0]]
@@ -79,22 +83,24 @@ filter6 = [ [0, 1, 0], [0, -2, 0], [0, 1, 0]]
 
 Another useful method is pooling. Apply a 2x2 filter to one of your convolved images, and plot the result. 
 
-* plot one
+* I applied filter 1 to the image of my face, and then pooled it using a 2x2 filter:
+
+<img src="./feb17hwpooled1.png" width="300" height="250" />
 
 In effect what have you accomplished by applying this filter? 
 
-* response
+* This filter basically created 2x2 boxes that look at 4 pixels at a time. It chooses the largest value from each 2x2 box, so the output is 1/4 the size of the original, but the largest values are preserved.
 
 Does there seem to be a logic (i.e. maximizing, averaging or minimizing values?) associated with the pooling filter provided in the example exercise (convolutions & pooling)? 
 
-* response
+* The filter uses the code `for x in range(0,size_x,2):` in the for loop, which means that it is iterating over the pixels but skipping every other pixel (because the step is 2). So it creates an empty image which is half the x and half the y of the original using line `new_x = int(size_x/2)` and `new_y = int(size_y/2)` and then populates the image with only half the pixels from the original image. For this strategy, there doesn't seem to be much logic. It's basically choose randomly which pixels to keep or not. 
 
 Did the resulting image increase in size or decrease? Why would this method be useful? 
 
-* response
+* The resulting image decreased in size. This is useful because it means that there is less information to process, so the computer can operate more efficiently/ save processing power. 
 
 **Stretch goal:**
 
 Again, instead of using misc.ascent(), apply the pooling filter to one of your transformed images.
 
-* response
+* see image above
