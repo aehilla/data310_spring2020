@@ -6,8 +6,7 @@ Modify the existing filter and if needed the associated weight in order to apply
 Plot each result, upload them to your response, and describe how each filter transformed the existing image as it convolved through the original array and reduced the object size.
 
 * Filter one
-
-- This filter seemed like it really emphasized vertical lines, much like the filter in the moroney video, but this one also really emphasized the diagonal lines, along the fence in the left side of the image. The horizontal lines of the fence at the top of the image are very under-emphasized, to the point that they have almost disappeared. 
+    * This filter seemed like it really emphasized vertical lines, much like the filter in the moroney video, but this one also really emphasized the diagonal lines, along the fence in the left side of the image. The horizontal lines of the fence at the top of the image are very under-emphasized, to the point that they have almost disappeared. 
 
 ``` 
 filter1 = [ [-2, -2, -2], [0, 0, 0], [2, 2, 2]] 
