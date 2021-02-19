@@ -12,9 +12,7 @@ Plot each result, upload them to your response, and describe how each filter tra
 filter1 = [ [-2, -2, -2], [0, 0, 0], [2, 2, 2]] 
 ```
 
-<img src="./feb17hwfilter1.png" width="250" height="250" />
-!(filter_1_plot)[feb17hwfilter1.png]
-
+<img src="./feb17hwfilter1.png" width="300" height="250" />
 
 * Filter two
 ** This filter behaved similarly to filter one. It has the same numbers as filter one, but I swapped the signs of the first array and the last array, to see if making the numbers positive/negative affected the output of the filter. The plots of the two images for filter 1 and 2 are almost identical, although filter 1 seems to have emphasized the vertical and diagonal lines even more than filter 2. 
@@ -23,7 +21,7 @@ filter1 = [ [-2, -2, -2], [0, 0, 0], [2, 2, 2]]
 filter2 = [ [2, 2, 2], [0, 0, 0], [-2, -2, -2]]
 ```
 
-!(filter_2_plot)[feb17hwfilter2.png]
+<img src="./feb17hwfilter2.png" width="300" height="250" />
 
 * Filter three
 ** For this filter, I wanted to see what would happen if I left the middle value in each array as zero. This filter did not emphasize the vertical or diagonal lines as much as filter 1 and 2 did, but it also didn't particularly emphasize the horizontal lines either. In general, the output of the image using the filter was much darker than the other filters. 
@@ -32,7 +30,7 @@ filter2 = [ [2, 2, 2], [0, 0, 0], [-2, -2, -2]]
 filter3 = [ [2, 0, 2], [1, 0, -1], [-2, 0, -2]]
 ```
 
-!(filter_3_plot)[feb17hwfilter3.png]
+<img src="./feb17hwfilter3.png" width="300" height="250" />
 
 What are you functionally accomplishing as you apply the filter to your original array (see the following snippet for reference)? 
 
