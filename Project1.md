@@ -17,3 +17,10 @@ for link in df1['links']:
         home_value = home_value.find_next('p').get_text(strip=True)
     zillow_zestimate.append(home_value)
 ```
+
+When I try running each line outside of a for loop, `s.get(link, headers=req_headers)` does not work because the links contain html still and therefore requests cannot access the info at the links' site. When I test on just the first link and fix it using 
+```
+link = df1['links'][0]
+link = link.replace('<aclass="list-card-linklist-card-link-top-margin"href="','')
+```
+then  `s.get(link, headers=req_headers)` works. But when I try to fix all the links, using `df1['links'] = df1.links.replace('<aclass="list-card-linklist-card-link-top-margin"href="','')` it does not work, for some reason. 
