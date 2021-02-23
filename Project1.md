@@ -36,12 +36,20 @@ Clean the housing data you obtained and create a number of usable features (inde
 
 A description of the housing data you scraped from zillow
 * response
+* descriptive statistics plot
+
 A description of your model architecture
 * response
+``` 
+code
+```
+
 An analysis of your model output
 * response
+
 An analysis of the output that assesses and ranks all homes from best to worst deal
 * response
+* Graph showing all the homes' rankings 
 * Table:
 
 |Name | Actual      | Predicted | Deal|
@@ -56,4 +64,5 @@ An analysis of the output that assesses and ranks all homes from best to worst d
 Include at least three plots that support your project report
 
 Stretch goal: add a spatial variable to your feature set and compare with the original model. Did this improve the predictive power of your model? If so, how?
+* spatial variable could be zip code? 
 
