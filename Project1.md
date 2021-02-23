@@ -26,3 +26,34 @@ link = link.replace('<aclass="list-card-linklist-card-link-top-margin"href="',''
 then  `s.get(link, headers=req_headers)` works. But when I try to fix all the links, using `df1['links'] = df1.links.replace('<aclass="list-card-linklist-card-link-top-margin"href="','')` it does not work, for some reason. 
 
 * wait now if I use `df1['links'] = df1['links'].str.replace(replacement,'')` it does what I want it to
+
+
+Select a city and scrape as many observations as possible from zillow. Try to obtain at least 400 observations from your selected location.
+
+* Selected location: Asheville
+
+Clean the housing data you obtained and create a number of usable features (independent variables) and targets (dependent variables). Set price as the response variable, and then set numbers of beds, number of bathrooms and total square footage as the predictors. Following the previous model you specified (6 houses in Mathews), import your new data set and train a new model on your target and features. Write a one and a half to two page report on your results and include the following:
+
+A description of the housing data you scraped from zillow
+* response
+A description of your model architecture
+* response
+An analysis of your model output
+* response
+An analysis of the output that assesses and ranks all homes from best to worst deal
+* response
+* Table:
+
+|Name | Actual      | Predicted | Deal|
+|-----| ----------- | ----------- |----|
+|Church| 3.99      | 3.96      | Fair deal|
+|Hudgins| .97      | 1.649       | Good deal|
+|Mathews| 3.475   | 3.076      | Bad deal |
+|Mobjack| 2.890   | 3.092        | Good deal|
+|Moon| 2.500  | 1.578        | Bad deal|
+|New Pt. Comfort| 2.290   | 2.667   |Good deal|
+
+Include at least three plots that support your project report
+
+Stretch goal: add a spatial variable to your feature set and compare with the original model. Did this improve the predictive power of your model? If so, how?
+
