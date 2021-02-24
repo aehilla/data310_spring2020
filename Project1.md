@@ -13,7 +13,7 @@ A description of the housing data you scraped from zillow
 
 
 
-| statistics  |  prices | no_beds   |    baths    |     sqft |
+|measure  |  prices | no_beds   |    baths    |     sqft |
 |------|----------|-------------|-----------|
 |count | 392    |    392 | 392 | 392 |
 |mean |  $285,009    |      3.525  |  2.515 | 1988.882 |
