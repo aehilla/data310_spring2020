@@ -108,16 +108,15 @@ Again, instead of using misc.ascent(), apply the pooling filter to one of your t
 Convolve the 3x3 filter over the 9x9 matrix and provide the resulting matrix.
 
 * The resulting matrix is:
+* [corrected]
 ```
-      [[0, 0, 0, 0, 1, 0, 0, 0, 0],
-       [0, 0, 0, 1, 1, 1, 0, 0, 0],
-       [0, 0, 0, 1, 1, 1, 0, 0, 0],
-       [0, 0, 0, 1, 1, 1, 0, 0, 0],
-       [1, 3, 3, 3, 3, 3, 3, 3, 1],
-       [0, 0, 0, 1, 1, 1, 0, 0, 0],
-       [0, 0, 0, 1, 1, 1, 0, 0, 0],
-       [0, 0, 0, 1, 1, 1, 0, 0, 0],
-       [0, 0, 0, 0, 1, 0, 0, 0, 0]]
+ [[0, 0, 0, 3, 0, 0, 0],
+ [0, 0, 0, 3, 0, 0, 0],
+ [1, 1, 1, 3, 1, 1, 1],
+ [1, 1, 1, 3, 1, 1, 1],
+ [1, 1, 1, 3, 1, 1, 1],
+ [0, 0, 0, 3, 0, 0, 0],
+ [0, 0, 0, 3, 0, 0, 0]]
 ```
        
      
