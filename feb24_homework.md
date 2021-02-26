@@ -8,6 +8,23 @@ Convolve the two 3x3 matrices that were assigned to you with your 9x9 matrix and
 
 <img src="IMG_1420.jpg" alt="drawing" width="300"/>
 
+* Input:
+```
+filter1 = np.array([[1,0,0],[0,0,1],[1,1,0]])
+filter2 = np.array([[1,1,1],[0,1,1],[1,1,0]]) 
+matrix = np.array([
+    [1,-1,0,2,0,0,1,1,1],
+    [1,1,-1,2,0,-2,-1,0,0],
+    [1,-1,-1,-2,0,2,0,0,-1],
+    [1,0,0,-1,-1,2,-1,-1,-1],
+    [-1,-1,1,-1,2,1,-1,-1,1],
+    [-1,-1,-1,1,-2,-1,0,1,1],
+    [-1,0,0,-1,1,-2,-1,1,-1],
+    [0,1,0,-1,-1,-2,-1,0,-1],
+    [1,1,-1,-1,1,1,0,-1,1]
+])
+```
+
 * Correct outputs:
 ```
 output of filter 1:
@@ -34,23 +51,7 @@ output of filter 2:
 * I can't figure out what I'm doing wrong, but here's my results:
 
 ```
-filter1 = np.array([[1,0,0],[0,0,1],[1,1,0]])
-filter2 = np.array([[1,1,1],[0,1,1],[1,1,0]]) 
-matrix = np.array([
-    [1,-1,0,2,0,0,1,1,1],
-    [1,1,-1,2,0,-2,-1,0,0],
-    [1,-1,-1,-2,0,2,0,0,-1],
-    [1,0,0,-1,-1,2,-1,-1,-1],
-    [-1,-1,1,-1,2,1,-1,-1,1],
-    [-1,-1,-1,1,-2,-1,0,1,1],
-    [-1,0,0,-1,1,-2,-1,1,-1],
-    [0,1,0,-1,-1,-2,-1,0,-1],
-    [1,1,-1,-1,1,1,0,-1,1]
-])
-```
-
-```
-output from filter 1:
+Python output from filter 1:
 >>> [[ 1 -1  0  2  0  0  1  1  1]
  [ 1  0  2  0  0  2  1  2  0]
  [ 1  0  1  0  1  1  0  0 -1]
@@ -63,7 +64,7 @@ output from filter 1:
 ```
 
 ```
-output from filter 2:
+Python output from filter 2:
  >>> [[ 1 -1  0  2  0  0  1  1  1]
  [ 1  2  1  0  0  0  0  1  0]
  [ 1  0  0  0  0  2  1  0 -1]
