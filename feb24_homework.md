@@ -27,6 +27,8 @@ matrix = np.array([
 ```
 
 * Correct outputs:
+* filter 1:
+
 
 ```
 output of filter 1:
@@ -39,6 +41,8 @@ output of filter 1:
 [1,-1,-3,-3,2,-1,-3]]
 ```
 
+* filter 2:
+
 ```
 output of filter 2:
 [[0,0,1,-2,0,3,2],
@@ -49,6 +53,7 @@ output of filter 2:
 [-2,-1,-3,-5,-9,-3,1],
 [2,-2,-4,-5,-3,-2,-3]]
 ```
+
 
 * I tried to do this programmatically, can only get output matrices that are 9x9. When I run the convolution with the 3x3 filter on the 9x9 matrix it gives a 9x9 output, but I thought it was supposed to be 7x7. 
 * I tried to google the issue and tried using `scipy.signal.convolve2d(A, b)` taken from [this stack overflow post](https://stackoverflow.com/questions/59878951/convolving-a-each-row-of-a-2d-matrix-with-a-vector) instead of the manual convolution code, but the scipy convolve function still gives a 9x9 output. 
