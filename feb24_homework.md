@@ -6,7 +6,7 @@ Convolve the two 3x3 matrices that were assigned to you with your 9x9 matrix and
 
 * Update - I ended up doing the convolutions by hand:
 
-![picture](IMG_1420.jpg)
+![picture](IMG_1420.jpg =100x20)
 
 * I tried to do this and get an output similar to what Natalie and Wayne got (since you said their answers were correct). I don't know what I'm doing wrong but I can only get output matrices that are 9x9. I don't understand what the issue is because I looked at Natalie's code on her github and it seems the same as mine, but when I run the convolution with the 3x3 filter on the 9x9 matrix it gives a 9x9 output, but I thought it was supposed to be 7x7. 
 * I tried to google the issue and tried using `scipy.signal.convolve2d(A, b)` taken from [this stack overflow post](https://stackoverflow.com/questions/59878951/convolving-a-each-row-of-a-2d-matrix-with-a-vector) instead of the manual convolution code, but the scipy convolve function still gives a 9x9 output. 
