@@ -7,6 +7,7 @@ Convolve the two 3x3 matrices that were assigned to you with your 9x9 matrix and
 * I tried to do this and get an output similar to what Natalie and Wayne got (since you said their answers were correct). I don't know what I'm doing wrong but I can only get output matrices that are 9x9. I don't understand what the issue is because I looked at Natalie's code on her github and it seems the same as mine, but when I run the convolution with the 3x3 filter on the 9x9 matrix it gives a 9x9 output, but I thought it was supposed to be 7x7. 
 * I tried to google the issue and tried using `scipy.signal.convolve2d(A, b)` taken from [this stack overflow post](https://stackoverflow.com/questions/59878951/convolving-a-each-row-of-a-2d-matrix-with-a-vector) instead of the manual convolution code, but the scipy convolve function still gives a 9x9 output. 
 * I can't figure out what I'm doing wrong, and I haven't taken linear algebra so I don't really understand matrices anyways, but here's my results:
+
 ```
 filter1 = np.array([[1,0,0],[0,0,1],[1,1,0]])
 filter2 = np.array([[1,1,1],[0,1,1],[1,1,0]]) 
@@ -21,8 +22,10 @@ matrix = np.array([
     [0,1,0,-1,-1,-2,-1,0,-1],
     [1,1,-1,-1,1,1,0,-1,1]
 ])
+```
 
-## output from filter 1:
+```
+output from filter 1:
 >>> [[ 1 -1  0  2  0  0  1  1  1]
  [ 1  0  2  0  0  2  1  2  0]
  [ 1  0  1  0  1  1  0  0 -1]
@@ -32,8 +35,10 @@ matrix = np.array([
  [-1  0  0  0  0  0  0  0 -1]
  [ 0  0  0  0  0  0  0  0 -1]
  [ 1  1 -1 -1  1  1  0 -1  1]]
- 
- ## output from filter 2:
+```
+
+```
+output from filter 2:
  >>> [[ 1 -1  0  2  0  0  1  1  1]
  [ 1  2  1  0  0  0  0  1  0]
  [ 1  0  0  0  0  2  1  0 -1]
