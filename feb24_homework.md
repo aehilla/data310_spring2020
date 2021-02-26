@@ -54,12 +54,12 @@ output of filter 2:
 ```
 
 
-* I tried to do this programmatically, can only get output matrices that are 9x9. When I run the convolution with the 3x3 filter on the 9x9 matrix it gives a 9x9 output, but I thought it was supposed to be 7x7. 
+* I tried to do this programmatically, but can only get output matrices that are 9x9. When I run the convolution with the 3x3 filter on the 9x9 matrix it gives a 9x9 output, but I thought it was supposed to be 7x7. 
 * I tried to google the issue and tried using `scipy.signal.convolve2d(A, b)` taken from [this stack overflow post](https://stackoverflow.com/questions/59878951/convolving-a-each-row-of-a-2d-matrix-with-a-vector) instead of the manual convolution code, but the scipy convolve function still gives a 9x9 output. 
 * I can't figure out what I'm doing wrong, but here's my results:
 
 ```
-Python output from filter 1:
+Scipy convolve2 output from filter 1:
 >>> [[ 1 -1  0  2  0  0  1  1  1]
  [ 1  0  2  0  0  2  1  2  0]
  [ 1  0  1  0  1  1  0  0 -1]
@@ -72,7 +72,7 @@ Python output from filter 1:
 ```
 
 ```
-Python output from filter 2:
+Scipy convolve2 output from filter 2:
  >>> [[ 1 -1  0  2  0  0  1  1  1]
  [ 1  2  1  0  0  0  0  1  0]
  [ 1  0  0  0  0  2  1  0 -1]
