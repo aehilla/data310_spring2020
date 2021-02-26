@@ -26,8 +26,7 @@ matrix = np.array([
 ])
 ```
 
-* Correct outputs:
-* filter 1:
+* Outputs:
 
 
 ```
@@ -41,7 +40,7 @@ output of filter 1:
 [1,-1,-3,-3,2,-1,-3]]
 ```
 
-* filter 2:
+
 
 ```
 output of filter 2:
