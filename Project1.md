@@ -1,17 +1,13 @@
 ## Project 1 write-up
-### to be turned in March 3
 
-Select a city and scrape as many observations as possible from zillow. Try to obtain at least 400 observations from your selected location.
 
-* Selected location: Jacksonville, FL
+#### Selected location: 
 
-Clean the housing data you obtained and create a number of usable features (independent variables) and targets (dependent variables). Set price as the response variable, and then set numbers of beds, number of bathrooms and total square footage as the predictors. Following the previous model you specified (6 houses in Mathews), import your new data set and train a new model on your target and features. Write a one and a half to two page report on your results and include the following:
+Jacksonville, FL
 
-A description of the housing data you scraped from zillow
+#### Data
 * I initially scraped 400 observations, but 8 observations failed to scrape the square footage from the website and were dropped, so the data I used in the model ultimately contained 392 observations. 
-* descriptive statistics:
-
-
+* Descriptive statistics:
 
 |measure  |  prices | no_beds   |    baths    |     sqft |
 |------|----------|-------------|-----------|--------|
@@ -24,28 +20,38 @@ A description of the housing data you scraped from zillow
 |75%  |  $326,000    |      4  |  3 | 2440.0 |
 |max  |  $3,692,000    |     5  |  5 | 3621.0 |
 
-A description of your model architecture
+Initial distribution of home prices:
+
+(excludes outliers)
+
+<img src="prices_hist.png" alt="drawing" width="600"/>
+
+#### Description of model architecture
 * response
 ``` 
 code
 ```
 
-An analysis of your model output
+#### Analysis of model output
 * response
+* Observed versus predicted home prices:
 
-An analysis of the output that assesses and ranks all homes from best to worst deal
-* response
-* Graph showing all the homes' rankings 
-* Table:
+(excludes outliers)
 
-|Name | Actual      | Predicted | Deal|
-|-----| ----------- | ----------- |----|
-|Church| 3.99      | 3.96      | Fair deal|
-|Hudgins| .97      | 1.649       | Good deal|
-|Mathews| 3.475   | 3.076      | Bad deal |
-|Mobjack| 2.890   | 3.092        | Good deal|
-|Moon| 2.500  | 1.578        | Bad deal|
-|New Pt. Comfort| 2.290   | 2.667   |Good deal|
+<img src="observed_vs_predicted.png" alt="drawing" width="600"/>
+
+
+* Model performance seemed to worsen as prices increased:
+
+<img src="sq_err_vs_prices2.png" alt="drawing" width="600"/>
+
+#### An analysis of the output that assesses and ranks all homes from best to worst deal
+
+I think the homes that are the "worst deal" will be the ones that are much more expensive than the predicted price. Therefore the homes for which the difference between predicted and observed price is both negative (i.e. predicted price is lower than the actual price) and large are the worst deal, and the homes for which the difference between predicted and observed is large and positive will be the best deals. 
+
+In this graph, I show the difference between predicted and observed price, as compared to the observed price. I highlight the best, worst, and fairest deals in my dataset. The best deal is the house for which the predicted value was the highest above the observed value. The worst deal is the house for which the predicted value is the lowest below the observed value. The fairest deal is the house for which the difference between the predicted and observed value is closest to the median. 
+
+<img src="deal_rankings.png" alt="drawing" width="600"/>
 
 Include at least three plots that support your project report
 
