@@ -60,6 +60,7 @@ In other words, on average my model was off by about $127K, which is a pretty si
 
 
 * Model performance seemed to worsen as prices increased:
+    * This graph shows that at the very lowest priced homes in the dataset, the model had a moderately high level of error. The model was most accurate for the homes in the low middle range of prices, and became much less accurate as home prices increased from there. In general, this graph suggests that my model tended to assume that home prices would fall in limited range, and if the actual price fell outside that range, my model's prediction was pretty far off. The curved shape of the graph is interesting because it demonstrates that although some of the other charts make it look like the model's performance decreases in a linear fashion as prices increase, the relationship is actually complex than that.
 
 <img src="sq_err_vs_prices2.png" alt="drawing" width="600"/>
 
