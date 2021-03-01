@@ -56,7 +56,7 @@ In other words, on average my model was off by about $127K, which is a pretty si
 
 (excludes outliers)
 
-<img src="observed_vs_predicted.png" alt="drawing" width="600"/>
+<img src="observed_vs_predicted.png" alt="drawing" width="800"/>
 
 
 * Model performance seemed to worsen as prices increased:
