@@ -62,7 +62,7 @@ In other words, on average my model was off by about $127K, which is a pretty si
 * Model performance seemed to worsen as prices increased:
     * This graph shows that at the very lowest priced homes in the dataset, the model had a moderately high level of error. The model was most accurate for the homes in the low middle range of prices, and became much less accurate as home prices increased from there. In general, this graph suggests that my model tended to assume that home prices would fall in limited range, and if the actual price fell outside that range, my model's prediction was pretty far off. The curved shape of the graph is interesting because it demonstrates that although some of the other charts make it look like the model's performance decreases in a linear fashion as prices increase, the relationship is actually complex than that.
 
-<img src="sq_err_vs_prices2.png" alt="drawing" width="600"/>
+<img src="sq_err_vs_prices2.png" alt="drawing" width="800"/>
 
 #### Analysis of the output that assesses and ranks all homes from best to worst deal
 
@@ -70,5 +70,5 @@ I think the homes that are the "worst deal" will be the ones that are much more 
 
 In this graph, I show the difference between predicted and observed price, as compared to the observed price. I highlight the best, worst, and fairest deals in my dataset. The best deal is the house for which the predicted value was the highest above the observed value. The worst deal is the house for which the predicted value is the lowest below the observed value. The fairest deal is the house for which the difference between the predicted and observed value is closest to the median. 
 
-<img src="deal_rankings.png" alt="drawing" width="600"/>
+<img src="deal_rankings.png" alt="drawing" width="800"/>
 
