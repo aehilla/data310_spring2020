@@ -1,4 +1,4 @@
-## Project 1 write-up
+## Project 1
 
 
 #### Selected location: 
