@@ -27,7 +27,7 @@ Initial distribution of home prices:
 <img src="prices_hist.png" alt="drawing" width="600"/>
 
 #### Description of model architecture
-* I kept my model pretty simple, which probably contributed to its poor level of accuracy in making predictions. It takes number of bedrooms, number of bathrooms, and square footage (scaled down by a factor of 1000) as inputs, and then uses the same model architecture we have been using for most of our examples in class:
+* I kept my model pretty simple. It takes number of bedrooms, number of bathrooms, and square footage (scaled down by a factor of 1000) as inputs, and then uses the same model architecture we have been using for most of our examples in class. This model uses a keras Sequential model, compiled with a stochastic gradient descent optimizer and mean squared error as the loss function. I fit the model with 500 epochs. 
 
 ``` 
 df['sqft'] = df['sqft']/1000
@@ -49,7 +49,7 @@ model.fit(xs, ys, epochs= 500)
 ```
 
 #### Analysis of model output
-* My model was honestly not that good. The mean squared error for the predictions was very high, at 58,743,084,732 across all observations. The mean absolute error was 126,914.
+* My model was honestly not especially accurate. The mean squared error for the predictions was very high, at 58,743,084,732 across all observations. The mean absolute error was 126,914.
 In other words, on average my model was off by about $127K, which is a pretty significant margin since the mean home price in my dataset was $285,009. 
 
 * Observed versus predicted home prices:
