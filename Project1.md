@@ -24,7 +24,7 @@ Initial distribution of home prices:
 
 (excludes outliers)
 
-<img src="prices_hist.png" alt="drawing" width="600"/>
+<img src="prices_hist.png" alt="drawing" width="700"/>
 
 #### Description of model architecture
 * I kept my model pretty simple. It takes number of bedrooms, number of bathrooms, and square footage (scaled down by a factor of 1000) as inputs, and then uses the same model architecture we have been using for most of our examples in class. This model uses a keras Sequential model, compiled with a stochastic gradient descent optimizer and mean squared error as the loss function. I fit the model with 500 epochs. 
