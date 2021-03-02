@@ -9,7 +9,7 @@ Jacksonville, FL
 * I initially scraped 400 observations, but 8 observations failed to scrape the square footage from the website and were dropped, so the data I used in the model ultimately contained 392 observations. 
 * Descriptive statistics:
 
-|measure  |  prices | no_beds   |    baths    |     sqft |
+|  |  Asking Price | Bedrooms   |    Bathrooms    |     Sq. Feet |
 |------|----------|-------------|-----------|--------|
 |count | 392    |    392 | 392 | 392 |
 |mean |  $285,009    |      3.525  |  2.515 | 1988.882 |
