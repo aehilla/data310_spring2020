@@ -4,7 +4,7 @@
 ### R warm-up exercise
 -- Challenge question output:
 
-<img src="./mar3hw_challenge_question.png" width="300" />
+<img src="./mar3hw_challenge_question.png" width="700" />
 
 
 ### Request DHS data
