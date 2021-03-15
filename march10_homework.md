@@ -4,7 +4,7 @@
 
 output:
 
-<img style="float: right;" src="march10hw_q1.png" />
+<img style="float: right;" src="march10hw_q1.png" width = 600/>
 
 #### Pivot the persons columns within your households data to a long format in order to produce a similarly specified dataset that describes all persons residing within all households.
 
