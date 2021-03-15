@@ -6,8 +6,10 @@ output:
 
 <img style="float: right;" src="march10hw_q1.png" width = 600/>
 
-#### Pivot the persons columns within your households data to a long format in order to produce a similarly specified dataset that describes all persons residing within all households.
+#### Pivot the persons columns within your households data to a long format in order to produce a similarly specified dataset that describes all persons residing within all households. Using this data frame describing all persons standardize, normalize and percentize your variables and visualize each post transformed dataset as a heatmap that illustrates the heterogeneity of the combination of patterns.
 
-#### Using this data frame describing all persons standardize, normalize and percentize your variables and visualize each post transformed dataset as a heatmap that illustrates the heterogeneity of the combination of patterns.
+- pns dataframe:
 
-- in progress, having issues with heatmaply
+<img style="float: right;" src="march10hw_q2.png" width = 300/>
+
+- Heatmaps in progress, having issues with heatmaply
