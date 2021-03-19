@@ -39,7 +39,7 @@ Which "top_model" performed the best (had the largest AUC)?
 > This is the output from the LR AUC plotting function:
 
 
-<img style="float: right;" src="https://user-images.githubusercontent.com/54942759/111728353-16b3ca80-8843-11eb-8f3c-37efb964a67b.png" width = 400/>
+<img src="https://user-images.githubusercontent.com/54942759/111728353-16b3ca80-8843-11eb-8f3c-37efb964a67b.png" width = 400/>
 
 
 Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors?
