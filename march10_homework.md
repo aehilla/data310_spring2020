@@ -46,7 +46,7 @@ dev.off()
 ```
 which produced the following plot:
 
-<img style="float: right;" src="https://user-images.githubusercontent.com/54942759/111726158-c0dd2380-883e-11eb-8702-d2a65540ae82.png" width = 300/>
+<img style="float: right;" src="https://user-images.githubusercontent.com/54942759/111726158-c0dd2380-883e-11eb-8702-d2a65540ae82.png" width = 500/>
 
 After trying that workaround, I tried running the heatmaply function on the pnscopy dataframe, where all columns were numeric. The heatmaply functions then worked correctly, and created the following plots (which seem to be so large that the axis labels are unreadable):
 
