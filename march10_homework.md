@@ -32,7 +32,7 @@ pnscopy = percentize(pnscopy)
 which produced the following dataframe:
 
 
-<img style="float: right;" src="https://user-images.githubusercontent.com/54942759/111726036-84112c80-883e-11eb-931f-ae4aa0f472c4.png" width = 300/>
+<img src="https://user-images.githubusercontent.com/54942759/111726036-84112c80-883e-11eb-931f-ae4aa0f472c4.png" width = 300/>
 
 
 - Heatmaps in progress, having issues with heatmaply
@@ -60,24 +60,24 @@ dev.off()
 
 which produced the following plot:
 
-<img style="float: right;" src="https://user-images.githubusercontent.com/54942759/111726158-c0dd2380-883e-11eb-8702-d2a65540ae82.png" width = 500/>
+<img src="https://user-images.githubusercontent.com/54942759/111726158-c0dd2380-883e-11eb-8702-d2a65540ae82.png" width = 500/>
 
 
 After trying that workaround, I tried running the heatmaply function on the pnscopy dataframe, where all columns were numeric. The heatmaply functions then worked correctly, and created the following plots (which seem to be so large that the axis labels are unreadable):
 
 raw:
 
-<img style="float: right;" src="https://user-images.githubusercontent.com/54942759/111726707-d272fb00-883f-11eb-9e6f-7eb497c08268.png" width = 300/>
+<img src="https://user-images.githubusercontent.com/54942759/111726707-d272fb00-883f-11eb-9e6f-7eb497c08268.png" width = 300/>
 
 
 scaled:
 
-<img style="float: right;" src="https://user-images.githubusercontent.com/54942759/111726780-f20a2380-883f-11eb-8010-672db3c5842e.png" width = 300/>
+<img src="https://user-images.githubusercontent.com/54942759/111726780-f20a2380-883f-11eb-8010-672db3c5842e.png" width = 300/>
 
 normalized:
 
-<img style="float: right;" src="https://user-images.githubusercontent.com/54942759/111726866-21b92b80-8840-11eb-8c64-766cc93049ca.png" width = 300/>
+<img src="https://user-images.githubusercontent.com/54942759/111726866-21b92b80-8840-11eb-8c64-766cc93049ca.png" width = 300/>
 
 percentized:
 
-<img style="float: right;" src="https://user-images.githubusercontent.com/54942759/111726962-4f05d980-8840-11eb-8e11-78496c931031.png" width = 300/>
+<img src="https://user-images.githubusercontent.com/54942759/111726962-4f05d980-8840-11eb-8e11-78496c931031.png" width = 300/>
