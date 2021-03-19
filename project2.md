@@ -29,37 +29,34 @@ Which "top_model" performed the best (had the largest AUC)?
 15 0.00281  roc_auc hand_till  0.609     1      NA Preprocessor1_Model15
 ```
 
-> lr_best returns:
 
-```
-1 0.00108 roc_auc hand_till  0.611     1      NA Preprocessor1_Model11
-```
+Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors?
 
-> so the Preprocessor1_Model11 model was the "best"
+> I selected the penalty value from model 11, 0.00108, as the penalty. 
 
-> This is the output from the LR AUC plotting function:
+Provide justification for your selected penalty value? 
+
+> I selected the penalty value of 0.00108 because it fell in the middle of the range of penalty values in the 15 models created by the top_models. I ran all the different slices to look at the ROC plots and compare them. When n=15, there is not a huge difference between the models. However, I also tried running top_models with n= 30, and I then looked at the ROC plot for the 30th model (below). When I used slice(30), as you can see, the plots are all basically straight 45 degree lines. So in comparing the slices 1 through 15 to this plot, I found that slice 11 seemed like the plot had slightly bigger AUC than the other slices, although it is hard to be precise.
+
+</p>
+    <img src="https://user-images.githubusercontent.com/54942759/111836654-07795f00-88cd-11eb-960b-1458fbc75375.png" width = 400/>
+    <br>
+    <em>Fig: The ROC plots created when n = 30 and I use the penalty from the 30th model</em>
+</p>
+               
+               
+
+Finally, provide your ROC plots and interpret them. 
+
+> This is the output from the LR AUC plotting function using 0.00108 (slice 11) as the penalty:
 
 
 <img src="https://user-images.githubusercontent.com/54942759/111728353-16b3ca80-8843-11eb-8f3c-37efb964a67b.png" width = 400/>
 
-> in this plot, it appears that plot 5 has the greatest area under the curve
-
-
-Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors?
-
-> answer
-
-Provide justification for your selected penalty value? 
-
-> answer
-
-Finally, provide your ROC plots and interpret them. 
-
-> answer
 
 How effective is your penalized logistic regression model at predicting each of the five wealth outcomes.
 
-> answer
+> in this plot, it appears that the model is good at differentiating wealth categories 1 and 5 from the general population in the data, but the model is not good at all at differentiating 2 and 3. The performance for 4 is decent but not excellent. This suggests that the model could be significantly improved in terms of differentiating individuals in the middle wealth brackets.
 
 #### Model 2
 
