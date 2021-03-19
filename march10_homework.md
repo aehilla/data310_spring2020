@@ -4,14 +4,14 @@
 
 output:
 
-<img style="float: right;" src="march10hw_q1.png" width = 600/>
+<img src="march10hw_q1.png" width = 600/>
 
 
 #### Pivot the persons columns within your households data to a long format in order to produce a similarly specified dataset that describes all persons residing within all households. Using this data frame describing all persons standardize, normalize and percentize your variables and visualize each post transformed dataset as a heatmap that illustrates the heterogeneity of the combination of patterns.
 
 - pns dataframe:
 
-<img style="float: right;" src="march10hw_q2.png" width = 300/>
+<img src="march10hw_q2.png" width = 300/>
 
 
 - I scaled, normalized, and percentized the pns dataframe using the following code. For this heatmap function to work, I had to convert all the columns to numeric, so I made a pnscopy dataframe where everything was numeric, and then scaled, normalized, and percentized the data.
