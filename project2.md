@@ -4,9 +4,10 @@
 #### Model 1
 
 Using the R script provided, split and sample your DHS persons data and evaluate the AUC - ROC values you produce.
+
 Which "top_model" performed the best (had the largest AUC)?
 
-> This is the output produced by the top models:
+> This is the output produced by the top_models:
 
 ```     
     penalty .metric .estimator  mean     n   std_err .config              
@@ -34,12 +35,14 @@ Which "top_model" performed the best (had the largest AUC)?
 1 0.00108 roc_auc hand_till  0.611     1      NA Preprocessor1_Model11
 ```
 
-> so this model was the "best"
+> so the Preprocessor1_Model11 model was the "best"
 
 > This is the output from the LR AUC plotting function:
 
 
 <img src="https://user-images.githubusercontent.com/54942759/111728353-16b3ca80-8843-11eb-8f3c-37efb964a67b.png" width = 400/>
+
+> in this plot, it appears that plot 5 has the greatest area under the curve
 
 
 Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors?
