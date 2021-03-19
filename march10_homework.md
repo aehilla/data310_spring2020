@@ -35,7 +35,7 @@ which produced the following dataframe:
 ``` 
 Error in hclustfun(dist) : must have n >= 2 objects to cluster
 ```
-- I instead tried to create the heatmap of the raw data using the basic heatmap function in R:
+- I instead tried to create the heatmap of the scaled, normalized, and percentized data using the basic heatmap function in R:
 ``` 
 pns_prep2 <- slice_sample(pnscopy, n = 1000, replace = FALSE)
 pns_matrix2 <- data.matrix(pns_prep2)
