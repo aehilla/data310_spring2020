@@ -30,3 +30,5 @@ dev.off()
 which produced the following plot:
 
 <img style="float: right;" src="heatmap1.png" width = 600/>
+
+I don't think this exactly the plot we were supposed to get but I'm still working on it.
