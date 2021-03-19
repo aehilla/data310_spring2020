@@ -64,19 +64,25 @@ Using the R script provided, set up your random forest model and
 produce the AUC - ROC values for the randomly selected predictors, 
 and the minimal node size, again with wealth as the target. 
 
-> answer
+<img src="https://user-images.githubusercontent.com/54942759/111838314-8c657800-88cf-11eb-90fb-e4180dc57db8.png" width = 300/>
+
+> This curve is shows some distinction and is not as close to the 45 degree line. 
 
 How did your random forest model fare when compared to the penalized logistic regression? 
 
-> answer
+> Its performance is very similar
 
 Provide your ROC plots and interpret them. 
+ 
+<img src="https://user-images.githubusercontent.com/54942759/111839014-86bc6200-88d0-11eb-8ef1-87d20a4c929f.png" width = 300/>
 
-> answer
+> these ROC plots are very similar to the plots produced by the penalized logistic regression
 
 Are you able to provide a plot that supports the relative importance of each feature's contribution towards the predictive power of your random forest ensemble model?
 
-> answer
+<img src="https://user-images.githubusercontent.com/54942759/111839340-0813f480-88d1-11eb-9a32-61d9f618506c.png" width = 300/>
+
+> Not sure what this plot is telling me
 
 #### Model 3
 
