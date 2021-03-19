@@ -7,6 +7,7 @@ Using the R script provided, split and sample your DHS persons data and evaluate
 Which "top_model" performed the best (had the largest AUC)?
 
 > This is the output produced by the top models:
+
 ```     
     penalty .metric .estimator  mean     n   std_err .config              
       <dbl> <chr>   <chr>      <dbl> <int>   <dbl> <chr>                
@@ -26,12 +27,20 @@ Which "top_model" performed the best (had the largest AUC)?
 14 0.00221  roc_auc hand_till  0.610     1      NA Preprocessor1_Model14
 15 0.00281  roc_auc hand_till  0.609     1      NA Preprocessor1_Model15
 ```
+
 > lr_best returns:
-`1 0.00108 roc_auc hand_till  0.611     1      NA Preprocessor1_Model11` so this model was the "best"
+
+```
+1 0.00108 roc_auc hand_till  0.611     1      NA Preprocessor1_Model11
+```
+
+> so this model was the "best"
 
 > This is the output from the LR AUC plotting function:
 
+
 <img style="float: right;" src="https://user-images.githubusercontent.com/54942759/111728353-16b3ca80-8843-11eb-8f3c-37efb964a67b.png" width = 400/>
+
 
 Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors?
 
