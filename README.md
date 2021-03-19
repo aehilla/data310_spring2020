@@ -20,6 +20,6 @@ This repository was created for the Spring 2021 semester of Applied Machine Lear
 ### Projects
  - [Mini Project 1 - Feb 14](https://aehilla.github.io/data310_spring2021/MiniProj1.html)
  - [Project 1 - March 3](https://aehilla.github.io/data310_spring2021/Project1.html)
- 
+ - [Project 2 - March 24](https://aehilla.github.io/data310_spring2021/Project2.html)
 
 
