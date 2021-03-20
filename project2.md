@@ -86,24 +86,65 @@ Are you able to provide a plot that supports the relative importance of each fea
 Using the python script provided, train a logistic regression model using the tensorflow estimator API and your DHS data, again with wealth as the target. 
 Apply the linear classifier to the feature columns and determine the accuracy, AUC and other evaluative metrics towards each of the different wealth outcomes. 
 
-> answer
+> Logistic regression evaluation metrics:
+
+| metric | score |
+|----------|-------------|
+|accuracy          |        0.858338 |
+|accuracy_baseline    |     0.858338 |
+|auc       |                0.748549 |
+|auc_precision_recall  |    0.304784|
+|average_loss      |        0.354891|
+|label/mean       |         0.141662|
+|loss               |       0.354891|
+|precision      |           0.000000|
+|prediction/mean      |    0.155981|
+|recall            |        0.000000|
+|global_step        |     100.000000|
+
 
 Then continue with your linear classifier adding the derived feature columns you have selected in order to 
 extend capturing combinations of correlations (instead of learning on single model weights for each outcome). 
 Again produce your ROC curves and interpret the results.
 
-> answer
+> ROC:
+
+<img src="https://user-images.githubusercontent.com/54942759/111887849-2996de00-89ae-11eb-9f7a-b4e68d1cef5f.png" width=400/>
+
+> Predicted probabilities plot for logistic regression
+
+<img src="https://user-images.githubusercontent.com/54942759/111887689-19323380-89ad-11eb-8016-b51da6cd1bc8.png" width = 400/>
+
 
 #### Model 4
 
 Using the python script provided, train a gradient boosting model using decision trees with the tensorflow estimator. 
 Provide evaluative metrics including a measure of accuracy and AUC. 
 
-> answer
+> 
+| metric | score |
+|----------|-------------|
+|accuracy      |            0.858456|
+|accuracy_baseline    |     0.858338|
+|auc          |             0.760543|
+|auc_precision_recall  |    0.331856|
+|average_loss   |           0.338022|
+|label/mean     |           0.141662|
+|loss            |          0.338022|
+|precision       |          0.523810|
+|prediction/mean       |   0.146739|
+|recall       |             0.009213|
+|global_step    |         100.000000|
 
 Produce the predicted probabilities plot as well as the ROC curve for each wealth outcome and interpret these results.
 
-> answer
+> ROC:
+
+<img src="https://user-images.githubusercontent.com/54942759/111887811-f2283180-89ad-11eb-8f93-2980073a0f50.png" width=400/>
+
+> predicted probabilities:
+
+<img src="https://user-images.githubusercontent.com/54942759/111887768-b4c3a400-89ad-11eb-9846-b983717602d7.png" width = 400/>
 
 #### Analyze all four models 
 
