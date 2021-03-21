@@ -70,7 +70,7 @@ and the minimal node size, again with wealth as the target.
 5         34 roc_auc hand_till  0.611     1      NA Preprocessor1_Model15
 ```
 
-<img src="https://user-images.githubusercontent.com/54942759/111838314-8c657800-88cf-11eb-90fb-e4180dc57db8.png" width = 300/>
+<img src="https://user-images.githubusercontent.com/54942759/111838314-8c657800-88cf-11eb-90fb-e4180dc57db8.png" width = 400/>
 
 How did your random forest model fare when compared to the penalized logistic regression? 
 
@@ -78,7 +78,7 @@ How did your random forest model fare when compared to the penalized logistic re
 
 Provide your ROC plots and interpret them. 
  
-<img src="https://user-images.githubusercontent.com/54942759/111839014-86bc6200-88d0-11eb-8ef1-87d20a4c929f.png" width = 300/>
+<img src="https://user-images.githubusercontent.com/54942759/111839014-86bc6200-88d0-11eb-8ef1-87d20a4c929f.png" width = 400/>
 
 > these ROC plots are very similar to the plots produced by the penalized logistic regression. Although the evaluation metrics tell us that the AUC is slightly higher, it is very difficult to see that in the plots, because the AUC values are so close. In general, the main takeaway from these plots, as compared to the plots from model 1, is that both models performed similarly, especially in the fact that both models were relatively good at differentiating the poorest and the wealthiest (plots 1 and 5) from the general population, but were relatively bad at differentiating the middle income categories (plots 2, 3, and 4) from the general population. 
 
