@@ -40,7 +40,7 @@ Provide justification for your selected penalty value?
 
 Finally, provide your ROC plots and interpret them. 
 
-> The ROC plots created when n = 30 and I use the penalty from the 30th model:
+> The ROC plots created when n = 30 and I used the penalty from the 30th model:
 
 <img src="https://user-images.githubusercontent.com/54942759/111836654-07795f00-88cd-11eb-960b-1458fbc75375.png" width = 400/>      
 
@@ -72,8 +72,6 @@ and the minimal node size, again with wealth as the target.
 
 <img src="https://user-images.githubusercontent.com/54942759/111838314-8c657800-88cf-11eb-90fb-e4180dc57db8.png" width = 300/>
 
-> This curve is shows some distinction and is not as close to the 45 degree line. 
-
 How did your random forest model fare when compared to the penalized logistic regression? 
 
 > Its performance is very similar, and the mean ROC AUC values are quite similar (.613, .612, and .611 as compared to .611 in the model I chose for logistic regression). 
@@ -88,7 +86,6 @@ Are you able to provide a plot that supports the relative importance of each fea
 
 <img src="https://user-images.githubusercontent.com/54942759/111839340-0813f480-88d1-11eb-9a32-61d9f618506c.png" width = 300/>
 
-> Not sure what this plot is telling me
 
 #### Model 3
 
