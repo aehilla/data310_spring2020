@@ -48,7 +48,7 @@ Finally, provide your ROC plots and interpret them.
 
 <img src="https://user-images.githubusercontent.com/54942759/111728353-16b3ca80-8843-11eb-8f3c-37efb964a67b.png" width = 400/>
 
-> The difference between the penalty of slice 30 (first graph), where all the ROC plots are exactly 45 degree lines, and the output from slice 11 (second graph), shows that slice 11 is at least better at predicting the wealth outcomes than a model where the predictions are essentially random. 
+> The difference between the penalty of slice 30 (first graph), where all the ROC plots are exactly 45 degree lines, and the output from slice 11 (second graph), shows that slice 11 is at least better at predicting the wealth outcomes than a model like model 30 where the predictions are essentially random. 
 
 How effective is your penalized logistic regression model at predicting each of the five wealth outcomes.
 
@@ -116,6 +116,9 @@ Again produce your ROC curves and interpret the results.
 > ROC:
 
 <img src="https://user-images.githubusercontent.com/54942759/111887849-2996de00-89ae-11eb-9f7a-b4e68d1cef5f.png" width=400/>
+
+<img src="https://user-images.githubusercontent.com/54942759/111921040-d3d33c00-8a68-11eb-800c-7006ae18a4b1.png" width=400/>
+
 
 > Predicted probabilities plot for logistic regression
 
