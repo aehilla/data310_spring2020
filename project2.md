@@ -32,24 +32,23 @@ Which "top_model" performed the best (had the largest AUC)?
 
 Are you able to use the feature selection penalty to tune your hyperparameter and remove any potentially irrelevant predictors?
 
-> I selected the penalty value from model 11, 0.00108, as the penalty. 
+> Yes, I selected the penalty value from model 11, 0.00108, as the penalty. I think this did remove some irrelevant predictors. However, the AUC for model 11 was not significantly different from models 1 through 13, so I am unsure how much using the .00108 penalty improved the model as compared to the other options. 
 
 Provide justification for your selected penalty value? 
 
 > I selected the penalty value of 0.00108 because it fell in the middle of the range of penalty values in the 15 models created by the top_models. I ran all the different slices to look at the ROC plots and compare them. When n=15, there is not a huge difference between the models. However, I also tried running top_models with n= 30, and I then looked at the ROC plot for the 30th model (below). When I used slice(30), as you can see, the plots are all basically straight 45 degree lines. So in comparing the slices 1 through 15 to this plot, I found that slice 11 seemed like the plot had slightly bigger AUC than the other slices, although it is hard to be precise.
 
-<img src="https://user-images.githubusercontent.com/54942759/111836654-07795f00-88cd-11eb-960b-1458fbc75375.png" width = 400/>
-<em>Fig: The ROC plots created when n = 30 and I use the penalty from the 30th model</em>
-<br>         
-<br>         
-
 Finally, provide your ROC plots and interpret them. 
+
+> The ROC plots created when n = 30 and I use the penalty from the 30th model:
+
+<img src="https://user-images.githubusercontent.com/54942759/111836654-07795f00-88cd-11eb-960b-1458fbc75375.png" width = 400/>      
 
 > This is the output from the LR AUC plotting function using 0.00108 (slice 11) as the penalty:
 
-
 <img src="https://user-images.githubusercontent.com/54942759/111728353-16b3ca80-8843-11eb-8f3c-37efb964a67b.png" width = 400/>
 
+> The difference between the penalty of slice 30 (first graph), where all the ROC plots are exactly 45 degree lines, and the output from slice 11 (second graph), shows that slice 11 is at least better at predicting the wealth outcomes than a model where the predictions are essentially random. 
 
 How effective is your penalized logistic regression model at predicting each of the five wealth outcomes.
 
@@ -61,13 +60,23 @@ Using the R script provided, set up your random forest model and
 produce the AUC - ROC values for the randomly selected predictors, 
 and the minimal node size, again with wealth as the target. 
 
+```
+  `0.000000` .metric .estimator  mean     n std_err .config              
+       <int> <chr>   <chr>      <dbl> <int>   <dbl> <chr>                
+1         39 roc_auc hand_till  0.613     1      NA Preprocessor1_Model07
+2         37 roc_auc hand_till  0.612     1      NA Preprocessor1_Model06
+3         36 roc_auc hand_till  0.612     1      NA Preprocessor1_Model13
+4         35 roc_auc hand_till  0.612     1      NA Preprocessor1_Model14
+5         34 roc_auc hand_till  0.611     1      NA Preprocessor1_Model15
+```
+
 <img src="https://user-images.githubusercontent.com/54942759/111838314-8c657800-88cf-11eb-90fb-e4180dc57db8.png" width = 300/>
 
 > This curve is shows some distinction and is not as close to the 45 degree line. 
 
 How did your random forest model fare when compared to the penalized logistic regression? 
 
-> Its performance is very similar
+> Its performance is very similar, and the mean ROC AUC values are quite similar (.613, .612, and .611 as compared to .611 in the model I chose for logistic regression). 
 
 Provide your ROC plots and interpret them. 
  
@@ -115,6 +124,8 @@ Again produce your ROC curves and interpret the results.
 
 <img src="https://user-images.githubusercontent.com/54942759/111887689-19323380-89ad-11eb-8016-b51da6cd1bc8.png" width = 400/>
 
+> These plots show how 
+
 
 #### Model 4
 
@@ -145,6 +156,9 @@ Produce the predicted probabilities plot as well as the ROC curve for each wealt
 > predicted probabilities:
 
 <img src="https://user-images.githubusercontent.com/54942759/111887768-b4c3a400-89ad-11eb-9846-b983717602d7.png" width = 400/>
+
+> These plots show how..
+
 
 #### Analyze all four models 
 
