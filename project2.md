@@ -74,17 +74,17 @@ and the minimal node size, again with wealth as the target.
 
 How did your random forest model fare when compared to the penalized logistic regression? 
 
-> Its performance is very similar, and the mean ROC AUC values are quite similar (.613, .612, and .611 as compared to .611 in the model I chose for logistic regression). 
+> Its performance is very similar, and the mean ROC AUC values are quite similar (.613 as compared to .611 in the model I chose for logistic regression). The highest AUC value for Model 2 is slightly higher than the highest AUC value for Model 1, so Model 2 is slightly better. However, the difference are so small that I do think it's hard to make a case that this model is *significantly* better than model 1. 
 
 Provide your ROC plots and interpret them. 
  
 <img src="https://user-images.githubusercontent.com/54942759/111839014-86bc6200-88d0-11eb-8ef1-87d20a4c929f.png" width = 300/>
 
-> these ROC plots are very similar to the plots produced by the penalized logistic regression
+> these ROC plots are very similar to the plots produced by the penalized logistic regression. Although the evaluation metrics tell us that the AUC is slightly higher, it is very difficult to see that in the plots, because the AUC values are so close. In general, the main takeaway from these plots, as compared to the plots from model 1, is that both models performed similarly, especially in the fact that both models were relatively good at differentiating the poorest and the wealthiest (plots 1 and 5) from the general population, but were relatively bad at differentiating the middle income categories (plots 2, 3, and 4) from the general population. 
 
 Are you able to provide a plot that supports the relative importance of each feature's contribution towards the predictive power of your random forest ensemble model?
 
-<img src="https://user-images.githubusercontent.com/54942759/111839340-0813f480-88d1-11eb-9a32-61d9f618506c.png" width = 300/>
+<img src="https://user-images.githubusercontent.com/54942759/111839340-0813f480-88d1-11eb-9a32-61d9f618506c.png" width = 500/>
 
 
 #### Model 3
@@ -117,14 +117,12 @@ Again produce your ROC curves and interpret the results.
 
 <img src="https://user-images.githubusercontent.com/54942759/111887849-2996de00-89ae-11eb-9f7a-b4e68d1cef5f.png" width=400/>
 
-<img src="https://user-images.githubusercontent.com/54942759/111921040-d3d33c00-8a68-11eb-800c-7006ae18a4b1.png" width=400/>
-
-
 > Predicted probabilities plot for logistic regression
 
 <img src="https://user-images.githubusercontent.com/54942759/111887689-19323380-89ad-11eb-8016-b51da6cd1bc8.png" width = 400/>
 
-> These plots show how 
+> These plots show that the predicted probabilities were mainly clustered at the lower end of the values. This suggests that the model may have over-predicted for the lower range of values, and under-predicted for higher values.
+> The ROC plot shows that the model performed better than random chance. The evaluation metrics show that the model has an AUC of .74, which is not terrible, although it is closer to .50 than to 1, so in my opinion this model is not a lot better than random chance, but it is slightly better. 
 
 
 #### Model 4
@@ -157,15 +155,15 @@ Produce the predicted probabilities plot as well as the ROC curve for each wealt
 
 <img src="https://user-images.githubusercontent.com/54942759/111887768-b4c3a400-89ad-11eb-9846-b983717602d7.png" width = 400/>
 
-> These plots show how..
+> These plots show that this model also performed better than random chance. This ROC curve is extremely similar to model 3, although the slopes are slightly different, and the AUC of model 4 is slightly higher (.76 compared to .74). .76 is not a terrible AUC but it does seem like if the goal is to get as close to 1 as possible, then .76 is not *that* good.
 
 
 #### Analyze all four models 
 
 According to the evaluation metrics, which model produced the best results? 
 
-> answer
+> Model 4, the gradient boosting model using decision trees, performed the best, with an AUC of 0.760543. 
 
 Were there any discrepancies among the five wealth outcomes from your DHS survey dataset?
 
-> answer
+> It seems like each model consistently performed better at predicting the lowest and highest wealth outcomes, but performed worse at predicting the middle wealth outcomes. In other words, the models perfomed better at the extremes. If I had to guess, I would assume this might be because the characteristics that define the individuals in the lowest and highest wealth categories are probably more distinct than the characteristics of individuals who fall somewhere in the middle. This discrepancy in performance suggests that the Philippines may have very high income inequality, given that the lowest and highest income brackets seem to be so far from the middle brackets.
