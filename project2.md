@@ -38,6 +38,10 @@ Provide justification for your selected penalty value?
 
 > I selected the penalty value of 0.00108 because it fell in the middle of the range of penalty values in the 15 models created by the top_models. I ran all the different slices to look at the ROC plots and compare them. When n=15, there is not a huge difference between the models. However, I also tried running top_models with n= 30, and I then looked at the ROC plot for the 30th model (below). When I used slice(30), as you can see, the plots are all basically straight 45 degree lines. So in comparing the slices 1 through 15 to this plot, I found that slice 11 seemed like the plot had slightly bigger AUC than the other slices, although it is hard to be precise.
 
+> logistic regression plot of AUC to penalty values:
+<img src="https://user-images.githubusercontent.com/54942759/112021980-392a3a00-8b08-11eb-8b7a-874cf25f5e8a.png" width = 400/>
+
+
 Finally, provide your ROC plots and interpret them. 
 
 > The ROC plots created when n = 30 and I used the penalty from the 30th model:
