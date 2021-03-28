@@ -17,7 +17,8 @@ Download the 12 rasters from your selected country and stack them.
 
 Produce a raster stack and calculate summary statistics using the script posted to our slack channel
 
-- Output summary statistics table produced:
+- Output summary statistics table for ADM 3: [link](march22hw_sumstats_adm3.csv)
+- Output summary statistics table for Regions:
 
 |FIELD1|sum.water     |sum.lulc.dst011|sum.lulc.dst040|sum.lulc.dst130|sum.lulc.dst140|sum.lulc.dst150|sum.lulc.dst160|sum.lulc.dst190|sum.lulc.dst200|sum.topo  |sum.slope    |sum.ntl      |sum.pop19  |mean.water      |mean.lulc.dst011   |mean.lulc.dst040  |mean.lulc.dst130|mean.lulc.dst140|mean.lulc.dst150|mean.lulc.dst160|mean.lulc.dst190  |mean.lulc.dst200|mean.topo       |mean.slope      |mean.ntl          |mean.pop19      |
 |------|--------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|----------|-------------|-------------|-----------|----------------|-------------------|------------------|----------------|----------------|----------------|----------------|------------------|----------------|----------------|----------------|------------------|----------------|
