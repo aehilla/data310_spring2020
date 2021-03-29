@@ -1,6 +1,6 @@
 ### informal responses from march 26
 
-# Output from script given in class:
+#### Output from script given in class:
 
 - successfully stacked rasters for Philippines ADM3
 
@@ -15,7 +15,7 @@
 
 - Plot 1:
 
-<img src="https://user-images.githubusercontent.com/54942759/112861465-d0e8d480-9082-11eb-8e08-c2de66ed69aa.png" width = 500/>
+<img src="https://user-images.githubusercontent.com/54942759/112863041-6cc71000-9084-11eb-8d9a-50fcb10c035c.png" width = 500/>
 
 - Plot 2:
 
