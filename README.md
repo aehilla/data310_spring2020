@@ -18,6 +18,7 @@ This repository was created for the Spring 2021 semester of Applied Machine Lear
 - [March 10: informal responses](https://aehilla.github.io/data310_spring2021/march10_homework.html)
 - [March 22: informal responses (updated 3/28/21)](https://aehilla.github.io/data310_spring2021/march22_hw.html)
 - [March 26: informal responses](https://aehilla.github.io/data310_spring2021/march26_hw.html)
+- [April 9: informal responses/ notes](https://aehilla.github.io/data310_spring2021/april9_responses.html)
 
 
 ### Projects
