@@ -36,3 +36,9 @@ final_model <- fit(lr_workflow, na.omit(data))
 ```
 
 The error from the original line of code suggests that there may be NA values present in the data, but na.omit does not resolve the error.
+
+Workaround #2:
+
+Reinstalled "raster" library and restarted R
+
+Still does not resolve error
