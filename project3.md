@@ -112,6 +112,20 @@ Tuning parameter 'sigma' was held constant at a value of 0.025
 Tuning parameter 'C' was held constant at a value of 2
 ```
 
+SVM Model Mean Error Plot:
+
+<img src = "https://user-images.githubusercontent.com/54942759/115250742-de303680-a0f7-11eb-9786-d48a5033a525.png" width = 500>
+
+SVM Mean Absolute Error Plot:
+
+<img src = "https://user-images.githubusercontent.com/54942759/115251144-3ff0a080-a0f8-11eb-9dca-680525a6c42e.png" width = 500>
+
+
+SVM Root Mean Squared Error Plot (3D):
+
+<img src = "https://user-images.githubusercontent.com/54942759/115251064-29e2e000-a0f8-11eb-9736-dfa295cfe01c.png" width = 500>
+
+
 
 
 
