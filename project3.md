@@ -57,6 +57,8 @@ RF Root Mean Squared Error (3D):
 
 <img src="https://user-images.githubusercontent.com/54942759/115155656-f0a26580-a04e-11eb-984f-360f04dcc80c.png" width=500>
 
+Cell stats (diff sums): 5721193
+
 #### Stretch goal: Support Vector Machine model
 
 Source: https://www.kaggle.com/thapelomola/svm-with-caret
