@@ -118,7 +118,8 @@ SVM Model Mean Error Plot:
 
 SVM Mean Absolute Error Plot:
 
-<img src = "https://user-images.githubusercontent.com/54942759/115251144-3ff0a080-a0f8-11eb-9dca-680525a6c42e.png" width = 500>
+
+<img src = "https://user-images.githubusercontent.com/54942759/115251323-6f071200-a0f8-11eb-8f1f-abccff5cc538.png" width = 500>
 
 
 SVM Root Mean Squared Error Plot (3D):
