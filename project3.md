@@ -2,7 +2,10 @@
 
 ##### Using two machine learning methods predict population values at 100 x 100 meter resolution throughout your selected country. Validate the two models using different methods presented in this class. Write a report assessing the two approaches and which of the two models was more accurate. Be sure to account for spatial variation throughout your selected location and provide substantive explanations for why those variations occurred
 
-For this project, I chose to focus on the Philippines, specifically the regions of Davao del Norte, Davao del Sur, Davao Oriental, and Compostela Valley. 
+For this project, I chose to focus on the Philippines, specifically the regions of Davao del Norte, Davao del Sur, Davao Oriental, and Compostela Valley. The linear regression, 
+random forest, and support vector machine models that I ran all performed pretty well. The linear regression and random forest models both had very similar ME, MAE, and RMSE plots. Looking at the RMSE plots for both models, it is clear that overall, the models had little error, but had very high error in a few particular localities. The 
+highest root mean squared error location, seen clearly in the 3D plots, appears to be the areas near the city of Mati, although it is hard to tell exactly. The support vector
+machine model, which I added as a stretch goal, does not account for spatial variation, but I did add the step of scaling the data using a simple min-max scaling function, so the RMSE is much lower, at 0.0791883. The R-squared for this model is also about 0.5, which is not that great but higher than I expected for such a simple model. 
 
 #### Linear Regression Model:
 
