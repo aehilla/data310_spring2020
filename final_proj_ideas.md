@@ -19,4 +19,6 @@ Data sources:
     - Description: A GeoTIFF layer with the air Temperature at 2 m above ground level in °C (TEMP). Data layers are provided in a geographic spatial reference (EPSG:4326). The resolution (pixel size) of TEMP is 30 arcsec (nominally 1 km). 
 
 - [Worldpop Urban Change 100m Resolution](https://www.worldpop.org/geodata/summary?id=1240)
+    - Alpha version 2000 and 2010 estimates of numbers of people per grid square, with national totals adjusted to match UN population division estimates (http://esa.un.org/wpp/) and MODIS-derived urban extent change built in.
+    
 - [GeoBoundaries Subnational Administrative Boundaries](https://www.geoboundaries.org/data/geoBoundaries-3_0_0/SLB/)
