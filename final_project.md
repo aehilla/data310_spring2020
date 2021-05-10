@@ -74,6 +74,10 @@ urbchg_adm3 <- exact_extract(urbchg, sol_adm3, fun=c('sum', 'mean'))
 stackadm3 <- exact_extract(stacked, sol_adm3, fun=c('sum', 'mean'))
 ```
 
+> To explore the data, I plotted the two variables and used a simple linear regression (`fit <- lm(sum.temperature ~ sum.SLB10urbchg, data = stackadm3)`) to plot the line of best fit. This plot shows that there seems to be a positive, roughly linear relationship between urban change and temperature, showing that temperature increases as urbanization increases. 
+
+<img src = "https://user-images.githubusercontent.com/54942759/117688747-1373f580-b187-11eb-8d5e-cf28f007816f.png" width = 500>
+
 > For my initial model, I used a simple Support Vector Machine model to assess the impact of the urban change data (X)
 on the air temperature measurements (Y) in each administrative zone. This was a very basic model and did not have a high level of 
 accuracy:
@@ -131,13 +135,7 @@ SVM Linear Predicted Test plot:
 
 ###### Conclusion
 
-Conclude with a section that preliminarily assesses model performance. 
-If you have results from your implementation, you are welcome to add those in this section. 
-Compare your preliminary results with those from the literature on your topic for a comparative assessment.
-If you are not able to produce preliminary results, provide a cursory literature review that includes 2 sources that present and describes their validation.
-With more time and project support, estimate what an ideal outcome looks like in terms of model validation.
-
-- My model is pretty weak and does not have much predictive power. The R-squared of the SVM linear model is only 0.10, suggesting that the correlation between the variables is weak. Prior literature on the relationship between urbanization and temperature suggests that there is a linear relationship between these variables. This is line with my models' performance showing that the Linear SVM model performs slightly better than the radial SVM model. I think my model could be improved by having a wider time frame of data - e.g. looking at the effects of urbanization over a span of several decades.
+- My model is pretty weak and does not have much predictive power. The R-squared of the SVM linear model is only 0.10, suggesting that the correlation between the variables is weak. Prior literature on the relationship between urbanization and temperature suggests that there is a linear relationship between these variables. This is line with my models' performance showing that the Linear SVM model performs slightly better than the radial SVM model. I think my model could be improved by having a wider time frame of data - e.g. looking at the effects of urbanization over a span of several decades. 
 
 Literature on urbanization and surface temperature:
 
