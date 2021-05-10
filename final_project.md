@@ -1,4 +1,4 @@
-### Final Project: Urban Change and Air Temperature in the Solomon Islands
+### Final Project: Impact of Urbanization on Temperature in the Solomon Islands
 
 ##### Due May 12
 
@@ -74,11 +74,30 @@ urbchg_adm3 <- exact_extract(urbchg, sol_adm3, fun=c('sum', 'mean'))
 stackadm3 <- exact_extract(stacked, sol_adm3, fun=c('sum', 'mean'))
 ```
 
-> To explore the data, I plotted the two variables and used a simple linear regression (`fit <- lm(sum.temperature ~ sum.SLB10urbchg, data = stackadm3)`) to plot the line of best fit. This plot shows that there seems to be a positive, roughly linear relationship between urban change and temperature, showing that temperature increases as urbanization increases. 
+> To explore the data, I plotted the two variables and used a simple linear regression to plot the line of best fit. This plot shows that there seems to be a positive, roughly linear relationship between urban change and temperature, showing that temperature increases as urbanization increases. 
 
 <img src = "https://user-images.githubusercontent.com/54942759/117688747-1373f580-b187-11eb-8d5e-cf28f007816f.png" width = 500>
 
-> For my initial model, I used a simple Support Vector Machine model to assess the impact of the urban change data (X)
+The linear regression summary below also shows that the relationship is positive, with urban change having a coefficient of 26.30 and statistically significant to the 0.05 level. 
+
+```
+Residuals:
+   Min     1Q Median     3Q    Max 
+ -7110  -3435  -1008   2262  27236 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)      3670.29     477.36   7.689 9.16e-13 ***
+sum.SLB10urbchg    26.30      12.04   2.184   0.0302 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4440 on 181 degrees of freedom
+Multiple R-squared:  0.02569,	Adjusted R-squared:  0.0203 
+F-statistic: 4.772 on 1 and 181 DF,  p-value: 0.03022
+```
+
+> To try to build from the simple linear regression model, I used a simple Support Vector Machine model to assess the impact of the urban change data (X)
 on the air temperature measurements (Y) in each administrative zone. This was a very basic model and did not have a high level of 
 accuracy:
 
