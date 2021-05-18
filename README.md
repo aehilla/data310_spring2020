@@ -30,6 +30,6 @@ This repository was created for the Spring 2021 semester of Applied Machine Lear
  - [Project 2 - March 24](https://aehilla.github.io/data310_spring2021/project2.html)
  - [Project 3 - April 18](https://aehilla.github.io/data310_spring2021/project3.html)
  - [May 12: final project written summary](https://aehilla.github.io/data310_spring2021/final_project.html)
- - [May 12: final project video presentation](https://youtu.be/aHS9KYa_bQ4)
+ - [May 18: final project video presentation](https://youtu.be/aHS9KYa_bQ4)
 
 
